@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>２００８年度 日本カメラフォトコンテスト入賞作</title>
+
+<!--
+	1 ) Reference to the files containing the JavaScript and CSS.
+-->
+
+<script type="text/javascript" src="../highslide/highslide-with-gallery.js"></script>
+<link rel="stylesheet" type="text/css" href="../highslide/highslide.css" />
+
+<!--
+    2) Optionally override the settings defined at the top
+    of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+
+<script type="text/javascript">
+	hs.graphicsDir = '../highslide/graphics/';
+	hs.align = 'center';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.fadeInOut = true;
+	hs.dimmingOpacity = 1.0; //modified
+	hs.wrapperClassName = 'borderless floating-caption';
+	hs.captionEval = 'this.thumb.alt';
+	hs.marginBottom = 70; // make room for the controls and the floating caption
+	hs.numberPosition = 'caption';
+	hs.lang.number = '%1/%2';
+	hs.creditsPosition = 'bottom left'; // added
+
+	// Add the slideshow providing the controlbar and the thumbstrip
+	hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 4000, //modified
+		repeat: false,
+		useControls: true,
+		overlayOptions: {
+			className: 'text-controls',
+			position: 'bottom center',
+			relativeTo: 'viewport',
+			offsetX: 0, //modified
+			offsetY: -5
+
+		}
+	});
+
+</script>
+
+<!--
+	3) Add some extra CSS
+-->
+<style type="text/css">
+/* Caption */
+.highslide-caption {
+	width: 100%;
+	text-align: right;
+}
+/* Image number */
+.highslide-number {
+	display: inline;
+	padding-right: 1em;
+	color: #707070;
+}
+
+/* added */
+.highslide-dimming {
+	background: #d6d6d6;
+}
+
+/* added */
+a.highslide-credits,
+a.highslide-credits i {
+	padding: 2px;
+	color: #707070;
+	text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+	color: black;
+	background-color: white;
+}
+a.highslide-credits {
+	position: relative;
+	top: 28px;
+}
+
+</style>
+
+</head>
+<body bgcolor="#d6d6d6" text="#505050" link="blue">
+<center>
+<h1>２００８年度 日本カメラフォトコンテスト入賞作</h1>
+２００８年度日本カメラフォトコンテスト（カラープリント部門）で年度賞６位を頂いたときの入賞作品です
+<div class="highslide-gallery" style="margin: auto">
+<table border="0" cellspacing="10" cellpadding="10" bgcolor="#d6d6d6">
+<tr align="center">
+  <td>
+    <a class='highslide' href='img/2008-01.jpg' onclick="return hs.expand(this)">
+      <img src='th/2008-01.jpg' border="0" /></a>
+      <br />1月号 「町」
+  </td>
+  <td>
+    <a class='highslide' href='img/2008-02.jpg' onclick="return hs.expand(this)">
+      <img src='th/2008-02.jpg' border="0" /></a>
+      <br />2月号 「まち」
+  </td>
+  <td>
+    <a class='highslide' href='img/2008-04.jpg' onclick="return hs.expand(this)">
+      <img src='th/2008-04.jpg' border="0" /></a>
+      <br />4月号 「まち」
+  </td>
+</tr>
+<tr align="center">
+  <td>
+    <a class='highslide' href='img/2008-05.jpg' onclick="return hs.expand(this)">
+      <img src='th/2008-05.jpg' border="0" /></a>
+      <br />5月号 「apartment」
+  </td>
+  <td>
+    <a class='highslide' href='img/2008-08.jpg' onclick="return hs.expand(this)">
+      <img src='th/2008-08.jpg' border="0" /></a>
+      <br />8月号 「LINES」
+  </td>
+  <td>
+    <a class='highslide' href='img/2008-11.jpg' onclick="return hs.expand(this)">
+      <img src='th/2008-11.jpg' border="0" /></a>
+      <br />11月号 「まち」
+  </td>
+</tr>
+<tr align="center">
+  <td>
+    <a class='highslide' href='img/2008-12.jpg' onclick="return hs.expand(this)">
+      <img src='th/2008-12.jpg' border="0" /></a>
+      <br />12月号 「CUBIC PLACE」
+  </td>
+</tr>
+</table>
+Powered by <a href='http://highslide.com/'><i>Highslide JS</i></a>
+</div>
+
+<p>
+Copyright (C) 2011 KONDO Kazuhiro <br />
+<a href="../index.html"><b>PHOTO INDEX</b></a>
+</p>
+
+</center>
+
+</body>
+</html>
+
